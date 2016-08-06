@@ -132,6 +132,9 @@ namespace TTMouseclickSimulator
             {
                 if (!closeWindowAfterStop)
                 {
+                    MessageBox.Show(ex.ToString(), "Verbose Error");
+                    return;
+                    /*
                     TaskDialog dialog = new TaskDialog()
                     {
                         Title = AppName,
@@ -155,6 +158,7 @@ namespace TTMouseclickSimulator
 
                     if (dialog.ResultCustomButton == buttonTryAgain)
                         result = true;
+                    */
                 }
             }));
 
